@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project demonstrates the setup and configuration of development workflows, including linting, formatting, unit testing, and end-to-end testing. The repository is a simple venue application provided for this purpose.
+This project demonstrates the setup and configuration of development workflows, including linting, formatting, unit testing, and end-to-end testing. The repository is a simple venue application provided from Noroff for this purpose.
 
 ### Installing
 
