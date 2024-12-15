@@ -21,13 +21,15 @@ test.describe("login", () => {
   }) => {
     await page.goto("/login");
 
-    await page.locator('input[name="email"]').fill(process.env.TEST_USER_EMAIL);
-    await page.locator('input[name="password"]').fill("njdkjfdsnfkjn");
+    await page.locator('input[name="email"]').fill("wrongemail@gmail.com");
+    await page
+      .locator('input[name="password"]')
+      .fill(process.env.TEST_USER_PASSWORD);
 
     await page.getByRole("button", { name: "Login" }).click();
 
     await expect(page.locator("#message-container")).toContainText(
-      "Invalid email or password",
+      "Please enter a noroff.no or stud.noroff.no email address.",
     );
   });
 });
